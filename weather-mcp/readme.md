@@ -5,9 +5,9 @@ server-minimal.js is the MCP Server which used in Claude Desktop, it removed all
 ## Start MCP Server Gateway
 node .\mcp-gateway.js
 ### How will the gateway connect to the MCP Server?
-  mcpServer = spawn('node', ['server.js'], {
-    stdio: ['pipe', 'pipe', 'pipe']
-  });
+    mcpServer = spawn('node', ['server.js'], {
+      stdio: ['pipe', 'pipe', 'pipe']
+    });
 
     const request = {
         jsonrpc: "2.0",
@@ -19,7 +19,7 @@ node .\mcp-gateway.js
         }
     };
 
- mcpServer.stdin.write(JSON.stringify(request) + '\n');
+    mcpServer.stdin.write(JSON.stringify(request) + '\n');
 
 ## Test
 #### Use request.json to avoid enconding problem
@@ -73,5 +73,6 @@ C:\Users\lenovo\AppData\Roaming\Claude\claude_desktop_config.json
 #### Result
 ![alt text](image-1.png)
 ### Log 
-C:\Users\lenovo\AppData\Roaming\Claude\logs\mcp.log
+C:\Users\lenovo\AppData\Roaming\Claude\logs\mcp.log  
 C:\Users\lenovo\AppData\Roaming\Claude\logs\mcp-server-weather.log
+
