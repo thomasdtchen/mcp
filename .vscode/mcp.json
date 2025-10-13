@@ -1,0 +1,16 @@
+{
+	"servers": {
+		"weather-mcp-server": {
+			"type": "stdio",
+			"command": "node",
+			"args": [
+				"D:/git/AI/mcp/weather-mcp/server-minimal.js"
+			]
+		},
+		"umbrella-mcp-server": {
+			"url": "http://localhost:3000/mcp",
+			"type": "http"
+		}
+	},
+	"inputs": []
+}
