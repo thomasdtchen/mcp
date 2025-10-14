@@ -31,3 +31,7 @@ See setup_vscode_mcp\setup_vscode_mcp.md
 ✅ 需要服务器主动推送事件
 ✅ 兼容旧版协议
 ✅ 实时数据流需求
+
+## Try
+I will travel to London, please let me know the weather of London.
+![alt text](image.png)
